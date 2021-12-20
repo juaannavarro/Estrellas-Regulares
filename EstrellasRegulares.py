@@ -10,4 +10,16 @@ def dibujaEstrella(size, points, angle):
         else:
             turtle.right(180-angle2)
         return
-        
+
+
+def dibujaEstrella2(size, points, puntas, angulos ):
+    for i,j in zip(puntas, angulos):
+        if points == i:
+            angle = j
+
+    for x in range(points):
+        turtle.forward(size)
+        turtle.right(angle)
+    return
+            
+
