@@ -12,7 +12,7 @@ def dibujaEstrella(size, points, angle):
         return
 
 
-def dibujaEstrella2(size, points, puntas, angulos ):
+def dibujaEstrella2(size, points, puntas, angulos):
     for i,j in zip(puntas, angulos):
         if points == i:
             angle = j
@@ -21,5 +21,15 @@ def dibujaEstrella2(size, points, puntas, angulos ):
         turtle.forward(size)
         turtle.right(angle)
     return
+
+
+
+turtle.clearscreen()
+
+puntas=[5, 7, 8, 9, 10]
+angulos=[144,154,135,160,108]
+dibujaEstrella2(100, 5, puntas, angulos)
+print("Introduzca un número de los que aparecen en 'puntas' en la segunda coordenada de dibujaEstrela2: ")
+
             
 
